@@ -1,8 +1,8 @@
-def in_autotests_we_trust(a, b):
-    if a == b:
-        print('Test passed')
+def test_login(user, password):
+    if user == "admin" and password == "1234":
+        print("Login successful")
     else:
-        print('Test failed')
+        print("Login failed")
 
-in_autotests_we_trust(10, 10)
-in_autotests_we_trust(1, False)
+test_login("admin", "1234")
+test_login("user", "0000")
